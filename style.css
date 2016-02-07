@@ -1,22 +1,42 @@
 html {
 margin: 0 14%;
 }
-#left, #empty, #right, #postHead, #print{
-  border: 1px solid black;
+
+#greyBox {
+  background: repeating-linear-gradient(
+    45deg,
+    white,
+    grey 1px,
+    white 1px,
+    white 3.5px
+    );
+  height:.75em;
+  width: 100%;
+  margin-bottom:2em;
 }
 
 #top {
   display: flex;
 }
 
-#left {
-  height: 100px;
-  width: 300px;
-  display: flex;
+#left, #right {
+  /*height: 100px;*/
+  /*width: 600px;*/
+  flex-grow: 1;
+
 }
 
-#empty {
-  width: 70%;
+.logoEl {
+  display: inline-block;
+}
+
+#logoPic {
+  height: 2.5em;
+  width: 2.5em;
+}
+
+#logo {
+  padding-left: 0;
 }
 
 li {
@@ -25,24 +45,54 @@ li {
 
 #storeName {
   font-family: "Lobster Two", cursive;
+  font-size: 175%;
 }
 
 #tagline, p {
   font-family: monospace;
+  color: gray;
+  letter-spacing: -1px;
 }
+
+.rightLogos, .leftLogos {
+  display: inline-block;
+  margin-top: 7%;
+  float: right;
+}
+
+.rightLogos {
+  margin-left: .75em;
+}
+
 .ingredientList li {
   list-style-type: square;
 }
 #ingredients {
   background-image: url("img/list-bg.png");
+  display: flex;
+  height: 305px;
+  width: 899px;
 }
+
+#leftList, #rightList {
+  flex-grow: 1;
+  margin-top: 4%;
+  margin-left: 5%;
+  font-size: 1.5em;
+  line-height: 1.3em;
+}
+
 h1 {
   font-family: "Oswald", sans-serif;
   margin: 0;
+  font-size: 2em;
+  line-height: 90%;
 }
 #articleHead {
   display: flex;
+  padding-bottom: 1.2em;
 }
+
 #postHead, #print {
   flex-grow: 1;
 }
@@ -51,10 +101,22 @@ h1 {
 }
 .printEl {
   display: inline-block;
+  float: right;
 }
+
+#printImg {
+  margin-top: 1em;
+}
+
 #posted {
   margin: 0;
+  font-size: 80%;
 }
 #pizza {
   width: 100%;
+}
+
+.post p {
+  text-indent: 2em;
+  font-size: 120%;
 }
