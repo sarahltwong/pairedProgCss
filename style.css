@@ -27,3 +27,9 @@ li {
 #tagline {
   font-family: monospace;
 }
+.ingredientList li {
+  list-style-type: square;
+}
+#ingredients {
+  background-image: url("img/list-bg.png");
+}
