@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link href='https://fonts.googleapis.com/css?family=Lobster+Two:700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Patrick+Hand' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="style.css">
     <title></title>
       <section id = "top">
@@ -53,33 +54,42 @@
     <section id="ingredients">
       <ul class="ingredientList" id = "leftList">
         <li><input type="checkbox">1 1/2 cups milk</li>
-        <li>1/2 cup mascarpone</li>
-        <li>1/2 tsp pink salt</li>
-        <li>1 lb Black Mission figs</li>
-        <li>1/2 cup brown sugar</li>
-        <li>2-4 tsb water</li>
+        <li><input type="checkbox">1/2 cup mascarpone</li>
+        <li><input type="checkbox">1/2 tsp pink salt</li>
+        <li><input type="checkbox">1 lb Black Mission figs</li>
+        <li><input type="checkbox">1/2 cup brown sugar</li>
+        <li><input type="checkbox">2-4 tsb water</li>
       </ul>
       <ul class="ingredientList" id = "rightList">
-        <li>1 1/2 cups heavy cream</li>
-        <li>1/3 granulated sugar</li>
-        <li>2 egg yolks</li>
-        <li>1 lemon, juiced</li>
-        <li>2 tbsp butter</li>
-        <li>1 cup honey roasted pecans, roughly chopped</li>
+        <li><input type="checkbox">1 1/2 cups heavy cream</li>
+        <li id="strike"><input type="checkbox">1/3 granulated sugar</li>
+        <li id="strike"><input type="checkbox">2 egg yolks</li>
+        <li><input type="checkbox">1 lemon, juiced</li>
+        <li><input type="checkbox">2 tbsp butter</li>
+        <li><input type="checkbox">1 cup honey roasted pecans, roughly chopped</li>
       </ul>
     </section>
+    <section id = "greyBox">
+      <!-- grey box -->
+    </section>
     <section id="about">
-      <section id="auther">
-        <img src="img/van-pic.png" alt="" />
-      <p id="name">Vanessa Stevenson</p>
-      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <section id="author">
+        <img class="aboutEl" src="img/van-pic.png" alt="" />
       </section>
-      <button type="button" name="button">SHARE RECIPE</button>
+          <section>
+            <p class="aboutEl" id="name">Vanessa Stevenson</p>
+            <p class="aboutEl" id="aboutAuthor">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </section>
+      <button class="aboutEl" type="button" name="button">SHARE RECIPE</button>
     </section>
   </body>
   <section id="footer">
-    <img src="img/logo.png" alt="" />
-    <ul>
+    <section id="logoLine">
+      <section class="lineLeft"></section>
+      <img id="footerLogo" src="img/logo.png" alt="" />
+      <section class="lineRight"></section>
+    </section>
+    <ul id="footerText">
       <li>Delicious &copy 2013 &middot All Rights Reserved</li>
       <li>Proudly published by Ghost</li>
     </ul>
