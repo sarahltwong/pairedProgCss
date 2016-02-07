@@ -1,0 +1,29 @@
+#left, #empty, #right {
+  border: 1px solid black;
+}
+
+#top {
+  display: flex;
+}
+
+#left {
+  height: 100px;
+  width: 300px;
+  display: flex;
+}
+
+#empty {
+  width: 70%;
+}
+
+li {
+  list-style-type: none;
+}
+
+#storeName {
+  font-family: "Lobster Two", cursive;
+}
+
+#tagline {
+  font-family: monospace;
+}
