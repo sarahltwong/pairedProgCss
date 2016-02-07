@@ -1,4 +1,7 @@
-#left, #empty, #right {
+html {
+margin: 0 14%;
+}
+#left, #empty, #right, #postHead, #print{
   border: 1px solid black;
 }
 
@@ -24,7 +27,7 @@ li {
   font-family: "Lobster Two", cursive;
 }
 
-#tagline {
+#tagline, p {
   font-family: monospace;
 }
 .ingredientList li {
@@ -32,4 +35,26 @@ li {
 }
 #ingredients {
   background-image: url("img/list-bg.png");
+}
+h1 {
+  font-family: "Oswald", sans-serif;
+  margin: 0;
+}
+#articleHead {
+  display: flex;
+}
+#postHead, #print {
+  flex-grow: 1;
+}
+#print {
+  float: right;
+}
+.printEl {
+  display: inline-block;
+}
+#posted {
+  margin: 0;
+}
+#pizza {
+  width: 100%;
 }
